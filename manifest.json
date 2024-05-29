@@ -1,0 +1,41 @@
+{
+    "manifest_version": 3,
+    "name": "Profanity Filter",
+    "description": "Filters out profanities from words.csv file in all text content of a web page",
+    "version": "1.0",
+    "content_scripts": [
+      {
+        "js": [
+          "automatacontent.js"
+        ],
+        "matches": [
+          "*://*/*"
+        ],
+        "run_at": "document_end"
+      }
+    ],
+    "web_accessible_resources": [{
+        "resources":["<all_urls>"],
+        "matches": ["<all_urls>"]
+    }
+    ],
+    "permissions": [
+      "activeTab"
+    ],
+    "host_permissions": [
+        "https://twitter.com/*",
+        "https://facebook.com/*",
+        "https://facebook.com/*",
+        "https://reddit.com/*",
+        "https://9gag.com/*"
+    ],
+    "optional_host_permissions": [
+        "*://*/*"
+    ],
+    "action": {
+      "default_title": "Profanity Filter",
+      "default_popup": "default_popup.html",
+      "default_icon": "icon.png"
+    }
+  }
+  

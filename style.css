@@ -1,0 +1,30 @@
+  
+  .main-container{
+    width: 245px;
+    height: 270px;
+    margin: 5px;
+    border-style: ridge;
+  }
+  .container{
+    width: auto;
+    float:left;
+    font-family: 'Times New Roman';
+    display: flex;
+    justify-content: center;
+  }
+  .text{
+    border-radius: 10%;
+    background-color: blanchedalmond;
+    background-blend-mode: darken;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: large;
+    font-weight: 100;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  .content{
+    width: 100%;
+    float: left;
+    display: flex;
+    justify-content: center;
+  }
